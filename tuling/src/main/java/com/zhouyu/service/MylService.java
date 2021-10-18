@@ -3,17 +3,19 @@ package com.zhouyu.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @author 周瑜
  */
-@Component
-public class UserService {
+@Service
+public class MylService {
 
-	private MylService mylService;
+	@Autowired
+	private UserService userService;
 
 	public void test() {
-		System.out.println("user-test");
+		System.out.println("myl-test");
 	}
 
 
